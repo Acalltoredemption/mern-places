@@ -6,7 +6,7 @@ const Users = () => {
         id: 'u1',
         name: 'Justin',
         image: "https://i1.wp.com/oxsci.org/wp-content/uploads/2019/05/SMILE.png?w=1024&ssl=1",
-        places: '2'
+        placeCount: '2'
     }];
 return(
     <UsersList items={USERS} />
