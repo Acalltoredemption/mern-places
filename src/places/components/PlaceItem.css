@@ -1,6 +1,10 @@
 .place-item {
     margin: 1rem 0;
   }
+.map-container {
+  height: 15rem;
+  width: 100%;
+}
   
   .place-item__content {
     padding: 0;
