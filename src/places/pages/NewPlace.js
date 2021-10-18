@@ -1,5 +1,5 @@
 import React, {useCallback, useReducer} from 'react';
-import './NewPlace.css';
+import './PlaceForm.css';
 import Button from '../../shared/components/FormElements/Button';
 import {VALIDATOR_MINLENGTH, VALIDATOR_REQUIRE} from '../../shared/util/validators';
 
@@ -38,6 +38,10 @@ const NewPlace = () => {
                 isValid: false
             },
             description: {
+                value: '',
+                isValid: false
+            },
+            address: {
                 value: '',
                 isValid: false
             }
@@ -80,6 +84,8 @@ return (
          validators={[VALIDATOR_REQUIRE()]} 
          errorText="Please enter a valid address)." 
          onInput={inputHandler} />
+
+         
          <Button type="submit" disabled={!formState.isValid}>ADD PLACE</Button>
     </form>
 )
